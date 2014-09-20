@@ -10,9 +10,18 @@
     <body onload="app()">
         <span><b>Select color</b></span>
         <input type="color" id="color-picker" value="#ff0000">
+
         <input type="button" value="Clear Canvas" id="clear-btn"/><br/>
+
+        <span><b>Saved canvases</b></span>
+        <select id="canvases"></select>
+
+        <input type="button" value="Load!" id="load-btn"/><br/>
+
+        <input type="button" value="Save to local storage" id="save-btn"/><br/>
         <canvas id="tr-canvas" width=500 height=500></canvas>
 
+        <script src="storage.js" type="text/javascript"></script>
         <script src="script.js" type="text/javascript"></script>
     </body>
 </html>
